@@ -70,7 +70,9 @@ foreach($result as $k=>$v) {
 <td class="telefone"><?php echo $result[$k]["telefone"]; ?></td>
 <td class="senha"><?php echo $result[$k]["senha"]; ?></td> 
 <td class="action">
-<a class="btnEditAction" onClick="showEdit(<?php echo $result[$k]["id"]; ?>)">Edit</a> <a class="btnDeleteAction" onClick="del(<?php echo $result[$k]["id"]; ?>)">Delete</a>
+<a class="btnEditAction" onClick="showEdit(<?php echo $result[$k]["id"]; ?>)">Editar</a>
+<a class="btnDeleteAction" onClick="del(<?php echo $result[$k]["id"]; ?>)">Deletar</a>
+<a class="btnUpload" target="_blank" href="uploadindex.php?id=<?php echo $result[$k]["id"]; ?>">Upload</a>
 </td>
 </tr>
 <?php

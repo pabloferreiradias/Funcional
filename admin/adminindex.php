@@ -106,6 +106,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		return valid;
 	}
 	</script>
+	<style>
+	.login-page{
+		color:#000;
+	}
+	</style>
 </head>
 <body>
 	<!-- start header_bottom -->
@@ -114,44 +119,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="header-bottom_left">
 				<i class="phone"> </i><span>(19) 3295-4519 | <img src="../images/whats.png" alt="whatsapp" /> 9 8301-0406</span>
 			</div>
-			<div class="social">	
-				<ul>	
-					<li class="facebook"><a href="#"><span> </span></a></li>
-					<li class="twitter"><a href="#"><span> </span></a></li>
-					<li class="pinterest"><a href="#"><span> </span></a></li>	
-					<li class="google"><a href="#"><span> </span></a></li>
-					<li class="tumblr"><a href="#"><span> </span></a></li>
-					<li class="instagram"><a href="#"><span> </span></a></li>	
-					<li class="rss"><a href="#"><span> </span></a></li>							
-				</ul>
-			</div>
 			<div class="clear"></div>
 		</div>
 	</div>
-	<!-- start menu -->
-	<div class="menu">
-		<div class="container">
-			<div class="logo">
-				<a href="index.html"><img src="../images/logo.png" alt=""/></a>
-			</div>
-			<div class="h_menu4"><!-- start h_menu4 -->
-				<a class="toggleMenu" href="#">Menu</a>
-				<ul class="nav">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="depoimentos.html">Depoimentos</a></li>
-					<li><a href="horarios.html">Horários</a></li>
-					<li><a href="modalidades.html">Modalidades</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="planos.html">Planos</a></li>
-					<li><a href="contato.html">Contato</a></li>
-				</ul>
-				<script type="text/javascript" src="../js/nav.js"></script>
-			</div><!-- end h_menu4 -->
-			<div class="clear"></div>
-		</div>
-	</div>
-	<!-- end menu -->
-	<div class="main">
+	<div class="main" style="height:600px;">
 		<div class="login_top">
 			<div class="container">
 				<div class="col-md-6">
@@ -168,7 +139,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="login-page">
 						<h4 class="title">Alunos:</h4>
 						<div style="text-align:right;margin:20px 0px 10px;">
-							<a id="btnAddAction" onClick="$('#add-form').show();">Adionar</a>
+							<a id="btnAddAction" onClick="$('#add-form').show();">Adicionar</a>
 						</div>
 						<div id="usuarios-grid">
 							<input type="hidden" name="rowcount" id="rowcount" />					
@@ -211,62 +182,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 		</div>
 	</div>
-	<div class="footer-bottom">
-		<div class="container">
-			<div class="row section group">
-				<div class="col-md-4">
-					<h4 class="m_7">Cadastre-se</h4>
-					<p class="m_8">Receba nossos e-mails com dicas e informações sobre saúde e atividade física.</p>
-					<form class="subscribe">
-						<input type="text" value="Digite seu e-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Insert Email';}">
-					</form>
-					<div class="subscribe1">
-						<a href="#">Enviar e-mail<i class="but_arrow"> </i></a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="f-logo">
-						<img src="../images/logo.png" alt=""/>
-					</div>
-					<p class="m_9">Nosso diferencial está na qualidade técnica e na experiência de quase uma década e também na alegria e satisfação em fazer o que amamos e praticar o que acreditamos!</p>
-					<p class="address">Telefones : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="m_10">(19) 3295-4519 | 9 8301-0406</span></p>
-					<p class="address">E-mail : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="m_10">contato@funcionalstudio.com.br</span></p>
-				</div>
-				<div class="col-md-4">
-					<ul class="list">
-						<h4 class="m_7">Menu</h4>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Depoimentos</a></li>
-						<li><a href="#">Horários</a></li>
-						<li><a href="#">Modalidades</a></li>
-						<li><a href="#">Planos</a></li>
-						<li><a href="#">Contato</a></li>
-					</ul>
-					<ul class="list1">
-						<h4 class="m_7">INFORMATIVOS</h4>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Newsletter</a></li>
-					</ul>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</div>
-	</div>
 	<div class="copyright">
 		<div class="container">
 			<div class="copy">
 				<p>© 2015 Todos os direitos reservados a Funcional Studio | Desenvolvido por <a href="http://www.optimus.adv.br" target="_blank"> Optimus Tecnologia Jurídica</a></p>
-			</div>
-			<div class="social">	
-				<ul>	
-					<li class="facebook"><a href="#"><span> </span></a></li>
-					<li class="twitter"><a href="#"><span> </span></a></li>
-					<li class="pinterest"><a href="#"><span> </span></a></li>	
-					<li class="google"><a href="#"><span> </span></a></li>
-					<li class="tumblr"><a href="#"><span> </span></a></li>
-					<li class="instagram"><a href="#"><span> </span></a></li>	
-					<li class="rss"><a href="#"><span> </span></a></li>							
-				</ul>
 			</div>
 			<div class="clear"></div>
 		</div>

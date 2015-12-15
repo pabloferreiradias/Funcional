@@ -10,6 +10,14 @@ $usuario['telefone'] = $_SESSION["telefone"];
 $usuario['email'] = $_SESSION["email"];
 if (isset($_SESSION["avaliacao"])){
 	$usuario["avaliacao"] = $_SESSION["avaliacao"];
+}else{
+	$usuario["avaliacao"] = null;
+}
+
+if ($usuario["avaliacao"] == null){
+	$arquivo = "Sem arquivo de avaliação";
+}else{
+	$arquivo = '<a href="admin/arquivos/'.$usuario["avaliacao"].'" download="'.$usuario["avaliacao"].'">Baixe o arquivo aqui.</a>';
 }
 
 ?>
@@ -67,9 +75,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<li><a href="depoimentos.html">Depoimentos</a></li>
 					<li><a href="horarios.html">Horários</a></li>
 					<li><a href="modalidades.html">Modalidades</a></li>
-					<li><a href="blog.html">Blog</a></li>
 					<li><a href="planos.html">Planos</a></li>
 					<li><a href="contato.html">Contato</a></li>
+					<li><a href="login.html">Área do Cliente</a></li>
 				</ul>
 				<script type="text/javascript" src="js/nav.js"></script>
 			</div><!-- end h_menu4 -->
@@ -94,8 +102,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-6">
 					<div class="login-page">
 						<h4 class="title">Download:</h4>
-						<p><?php if (!isset($usuario["avaliacao"])) echo "Avaliação ainda não disponivel.";
-						else echo '<a href="'.$usuario["avaliacao"].'">Baixar avaliação</a>';?></p>
+						<p><?php echo arquivo; ?></p>
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -135,7 +142,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</ul>
 					<ul class="list1">
 						<h4 class="m_7">INFORMATIVOS</h4>
-						<li><a href="#">Blog</a></li>
+						<li><a href="login.html">Área do Cliente</a></li>
 						<li><a href="#">Newsletter</a></li>
 					</ul>
 				</div>

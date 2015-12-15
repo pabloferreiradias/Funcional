@@ -10,5 +10,5 @@ $result = $db_handle->runQuery("SELECT * FROM usuarios WHERE id='" . $_GET["id"]
 <td class="telefone"><?php echo $result[0]["telefone"]; ?></td>
 <td class="senha"><?php echo $result[0]["senha"]; ?></td> 
 <td class="action">
-<a class="btnEditAction" onClick="showEdit(<?php echo $_GET["id"]; ?>)">Edit</a> <a class="btnDeleteAction" onClick="del(<?php echo $_GET["id"]; ?>)">Delete</a>
+<a class="btnEditAction" onClick="showEdit(<?php echo $_GET["id"]; ?>)">Editar</a> <a class="btnDeleteAction" onClick="del(<?php echo $_GET["id"]; ?>)">Delete</a>
 </td>

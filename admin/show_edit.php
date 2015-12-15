@@ -31,7 +31,7 @@ $result = $db_handle->runQuery("SELECT * FROM usuarios WHERE id='" . $_GET["id"]
 <input type="text" name="senha" id="senha" class="demoInputBox" value="<?php echo $result[0]["senha"]; ?>">
 </div>
 <div>
-<input type="button" name="submit" id="btnAddAction" value="Save" onClick="edit(<?php echo $result[0]["id"]; ?>);" />
+<input type="button" name="submit" id="btnAddAction" value="Salvar" onClick="edit(<?php echo $result[0]["id"]; ?>);" />
 </div>
 </form>
 </td>

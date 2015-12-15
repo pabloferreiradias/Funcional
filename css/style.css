@@ -1685,8 +1685,8 @@ p.right_text2 {
 	line-height:1.5em;
 }
 .btn4{
-	float:left;
-	margin-left:20%;
+	
+	margin-left:0%;
 }
 .btn4 a {
 	background:#fff;
