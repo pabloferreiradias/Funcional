@@ -23,7 +23,8 @@ $conn->close();
 if ($aluno["avaliacao"] == null){
 	$arquivo = "Sem arquivo de avaliação";
 }else{
-	$arquivo = '<a href="arquivos/'.$aluno["avaliacao"].'" download="'.$aluno["avaliacao"].'">Baixe o arquivo aqui.</a>';
+	$arquivo = '<a href="arquivos/'.$aluno["avaliacao"].'" download="'.$aluno["avaliacao"].'">Baixe o arquivo aqui.</a></p><p>
+	<form action="deleteArquivo.php" method="post"><input type="submit" name="submit" value="Deletar" /><input type="hidden" name="id" value="'.$aluno["id"].'" /></form>';
 }
 
 ?>

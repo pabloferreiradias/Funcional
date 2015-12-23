@@ -186,11 +186,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-4">
 				   <h4 class="m_7">Cadastre-se</h4>
 				   <p class="m_8">Receba nossos e-mails com dicas e informações sobre saúde e atividade física.</p>
-				      <form class="subscribe">
-			             <input type="text" value="Digite seu e-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Insert Email';}">
+				      <form method="POST" id="cadastroNewsletter" class="subscribe" action="php/cadastrarnews.php">
+			             <input type="text" name="email" value="Digite seu e-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Insert Email';}">
 					  </form>
 			          <div class="subscribe1">
-			            <a href="#">Enviar e-mail<i class="but_arrow"> </i></a>
+			            <a href="javascript:{}" onclick="document.getElementById('cadastroNewsletter').submit(); return false;" >Enviar e-mail<i class="but_arrow"> </i></a>
 			          </div>
 				</div>
 				<div class="col-md-4">
